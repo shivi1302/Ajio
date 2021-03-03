@@ -1,0 +1,16 @@
+export default{
+    logo: require('../../assets/images/logo.png'),
+    fb: require('../../assets/images/fb.png'),
+    google: require('../../assets/images/google.png'),
+    backArrow: require('../../assets/images/arrow.png'),
+    ajio: require('../../assets/images/ajio.png'),
+    hamburgur: require('../../assets/images/hamburgur.jpg'),
+    bell: require('../../assets/images/bell.png'),
+    home:require('../../assets/images/home.png'),
+    store:require('../../assets/images/store.png'),
+    account:require('../../assets/images/account.jpg'),
+    wishlist:require('../../assets/images/wishlist.png'),
+    bag:require('../../assets/images/bag.png'),
+    search : require('../../assets/images/search.png'),
+    whatsapp : require('../../assets/images/whatsapp.png'),
+}
