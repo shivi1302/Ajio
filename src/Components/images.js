@@ -13,4 +13,8 @@ export default{
     bag:require('../../assets/images/bag.png'),
     search : require('../../assets/images/search.png'),
     whatsapp : require('../../assets/images/whatsapp.png'),
+    cross : require('../../assets/images/cross.jpg'),
+    user : require('../../assets/images/user.png'),
+    goTo : require('../../assets/images/goTo.png'),
+    location: require('../../assets/images/location.png')
 }

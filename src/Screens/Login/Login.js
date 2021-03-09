@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  StyleSheet
 } from "react-native";
 import images from "../../Components/images";
 import navigationString from "../../constants/navigationString";
@@ -62,35 +63,20 @@ class Login extends Component {
     let { emailError, passwordError } = this.state;
     return (
       <ScrollView>
-        <View style={{ flex: 1, marginTop: 35, margin: 10 }}>
+        <View style={styles.container}>
           <View style={{ flex: 0.07 }}></View>
           <View style={{ flex: 0.3 }}>
             <Text
-              style={{
-                color: "#6495ed",
-                textAlign: "right",
-                fontWeight: "bold",
-              }}
+              style={styles.skip}
             >
               Skip
             </Text>
             <Image
-              style={{
-                height: 60,
-                width: 70,
-                marginTop: 30,
-                marginLeft: 140,
-                marginRight: 100,
-              }}
+              style={styles.logoimage}
               source={images.logo}
             ></Image>
             <Text
-              style={{
-                fontSize: 22,
-                fontWeight: "bold",
-                textAlign: "center",
-                marginTop: 10,
-              }}
+              style={styles.mainWelcome}
             >
               Welcome to AJIO
             </Text>
@@ -102,13 +88,7 @@ class Login extends Component {
               onChangeText={(text) => {
                 this.setState({ email: text });
               }}
-              style={{
-                backgroundColor: `#dcdcdc`,
-                margin: 30,
-                height: 60,
-                borderRadius: 5,
-                paddingLeft: 10,
-              }}
+              style={styles.text}
             ></TextInput>
             <Text
               style={{
@@ -272,7 +252,35 @@ class Login extends Component {
     );
   }
 }
+const styles = StyleSheet.create({
+container:{ flex: 1, marginTop: 35, margin: 10 },
+skip:{
+  color: "#6495ed",
+  textAlign: "right",
+  fontWeight: "bold",
+},
+logoimage:{
+  height: 60,
+  width: 70,
+  marginTop: 30,
+  marginLeft: 140,
+  marginRight: 100,
+},
+mainWelcome:{
+  fontSize: 22,
+  fontWeight: "bold",
+  textAlign: "center",
+  marginTop: 10,
+},
+text:{
+  backgroundColor: `#dcdcdc`,
+  margin: 30,
+  height: 60,
+  borderRadius: 5,
+  paddingLeft: 10,
+},
 
+})
 export default Login;
 
 // onPress={()=>this.props.navigation.navigate(navigationString.Signup)}

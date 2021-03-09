@@ -8,4 +8,5 @@ export default{
     Stores:"stores",
     WishList :"wishlist",
     DetailPage :"DetailPage",
+    CheckOut : "CheckOut",
 }

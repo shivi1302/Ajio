@@ -2,8 +2,10 @@ import React, { Fragment } from "react";
 import { createStackNavigator } from '@react-navigation/stack';
 import navigationString from "../constants/navigationString";
 import BottomTabNavigator from "./TabRoutes";
-
 import { Account, Cart, DetailPage, Homepage, WishList } from "../Screens";
+import CheckOut from "../Screens/CheckOut/CheckOut";
+CheckOut
+
 
 function MainStack(Stack) {
 
@@ -47,6 +49,14 @@ function MainStack(Stack) {
                     headerShown: false
                 }}
                 name={navigationString.WishList}
+
+            />
+            <Stack.Screen
+                component={CheckOut}
+                options={{
+                    headerShown: false
+                }}
+                name={navigationString.CheckOut}
 
             />
             
